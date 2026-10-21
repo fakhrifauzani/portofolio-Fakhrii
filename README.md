@@ -33,11 +33,25 @@ php -S localhost:8000
 
 Buka `http://localhost:8000/`.
 
+## Deploy ke Vercel
+
+Proyek ini menggunakan runtime komunitas `vercel-php` untuk menjalankan PHP sebagai Vercel Function. Entry point-nya ada di `api/index.php`; file tersebut memuat halaman utama yang sama dengan versi Laragon. File CSS, JavaScript, dan gambar di `assets/` tetap disajikan sebagai aset statis.
+
+1. Push folder proyek ini ke repository GitHub.
+2. Di Vercel, pilih **Add New → Project**, lalu impor repository tersebut.
+3. Biarkan **Root Directory** di folder proyek ini dan gunakan pengaturan build default.
+4. Pilih **Deploy**. Setiap push berikutnya ke branch yang terhubung akan memicu deployment baru.
+
+Runtime PHP ini dikelola komunitas dan versi konfigurasinya tercatat di `vercel.json`. Vercel menyediakan panduan deployment melalui [Git](https://vercel.com/docs/deployments/git) dan [CLI](https://vercel.com/docs/cli).
+
 ## Struktur proyek
 
 ```text
 portofolio_fakhri/
 ├── index.php
+├── api/
+│   └── index.php
+├── vercel.json
 ├── config/
 │   └── portfolio.php
 ├── includes/
