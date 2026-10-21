@@ -14,7 +14,7 @@ function skill_icon_svg(mixed $icon): string
         'javascript' => '<svg class="skill-icon" viewBox="0 0 40 40" focusable="false"><rect x="3" y="3" width="34" height="34" rx="5" fill="#f7df1e"/><text x="33" y="29" fill="#202124" font-family="Arial,sans-serif" font-size="13" font-weight="800" text-anchor="end">JS</text></svg>',
         'php' => '<svg class="skill-icon" viewBox="0 0 40 40" focusable="false"><ellipse cx="20" cy="20" rx="18" ry="12" fill="#777bb4"/><text x="20" y="24" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-style="italic" font-weight="700" text-anchor="middle">php</text></svg>',
         'laravel' => '<svg class="skill-icon" viewBox="0 0 40 40" focusable="false"><path fill="#f05340" d="M20 2.5 36.5 12v16L20 37.5 3.5 28V12z"/><text x="20" y="28" fill="#fff" font-family="Georgia,serif" font-size="23" font-weight="700" text-anchor="middle">L</text></svg>',
-        'audio' => '<svg class="skill-icon skill-icon-audio" viewBox="0 0 40 40" fill="none" focusable="false"><path d="M5 22h4l3-9 5 16 4-21 5 24 4-14 2 4h3" stroke="#8061c4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/></svg>',
+        'audio' => '<svg class="skill-icon skill-icon-audio" viewBox="0 0 40 40" fill="none" focusable="false"><path d="M5 22h4l3-9 5 16 4-21 5 24 4-14 2 4h3" stroke="#ad835d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/></svg>',
         default => '',
     };
 }
