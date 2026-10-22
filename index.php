@@ -3,6 +3,12 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/includes/helpers.php';
 $portfolio = require __DIR__ . '/config/portfolio.php';
+
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: DENY');
+header('Referrer-Policy: strict-origin-when-cross-origin');
+header('Permissions-Policy: camera=(), microphone=(), geolocation=()');
+header("Content-Security-Policy: default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'");
 ?><!doctype html>
 <html lang="id">
 <head>
