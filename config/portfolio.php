@@ -26,6 +26,7 @@ return [
             ['name' => 'CSS', 'icon' => 'css3', 'description' => 'Mengatur tata letak, tampilan, dan responsivitas antarmuka.'],
             ['name' => 'JavaScript', 'icon' => 'javascript', 'description' => 'Menambahkan interaksi dan perilaku dinamis pada halaman web.'],
             ['name' => 'PHP', 'icon' => 'php', 'description' => 'Mempelajari logika sisi server dan pengolahan halaman dinamis.'],
+            ['name' => 'MySQL', 'icon' => 'mysql', 'description' => 'Mempelajari pengelolaan data relasional dan kueri dasar database.'],
             ['name' => 'Laravel', 'icon' => 'laravel', 'description' => 'Mengenal kerangka kerja PHP untuk membangun aplikasi web.'],
             ['name' => 'Audio Engineering', 'icon' => 'audio', 'description' => 'Minat pada rekaman, pengolahan suara, dan alur kerja audio.'],
         ],
