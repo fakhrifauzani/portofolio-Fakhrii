@@ -93,9 +93,9 @@ Ubah daftar `skills.items` di `config/portfolio.php`. Setiap item memiliki `name
 
 ### Mengganti atau menambah proyek
 
-Ubah `projects.items` di `config/portfolio.php`. Setiap kartu menerima `title`, `description`, `category`, `status`, `technologies`, `image_url`, `image_alt`, `image_fallback`, dan `image_source`. `image_url` dapat berisi URL HTTPS atau file gambar lokal di `assets/images/`. Kartu proyek hanya menampilkan gambar serta informasi teks, tanpa tautan atau tombol klik.
+Ubah `projects.items` di `config/portfolio.php`. Setiap kartu menerima `title`, `description`, `category`, `status`, `technologies`, `image_url`, `image_alt`, `image_fallback`, dan `image_source`. `image_url` dapat berisi URL HTTPS atau file gambar lokal di `assets/images/`. Tambahkan `url` untuk membuat seluruh kartu menjadi tautan ke demo proyek.
 
-Tiga kartu awal diberi label latihan atau konsep dan tidak memiliki tautan demo/repository. Kartu Website Portofolio Pribadi memakai screenshot lokal `assets/images/project-portofolio.png`, kartu Konversi Mata Uang & Crypto memakai `assets/images/project-konversi-mata-uang.png`, dan kartu Website Perpustakaan Sekolah memakai `assets/images/project-library.png`. Masing-masing memiliki ilustrasi SVG lokal sebagai fallback jika gambar gagal dimuat.
+Tiga kartu awal diberi label latihan atau konsep. Kartu Konversi Mata Uang & Crypto membuka demo di `https://konversi-mata-uang-versi-2.vercel.app/`. Kartu Website Portofolio Pribadi memakai screenshot lokal `assets/images/project-portofolio.png`, kartu Konversi Mata Uang & Crypto memakai `assets/images/project-konversi-mata-uang.png`, dan kartu Website Perpustakaan Sekolah memakai `assets/images/project-library.png`. Masing-masing memiliki ilustrasi SVG lokal sebagai fallback jika gambar gagal dimuat.
 
 ### Mengatur GitHub dan email
 

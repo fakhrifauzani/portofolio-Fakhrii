@@ -48,6 +48,7 @@ return [
             ],
             [
                 'title' => 'Konversi Mata Uang & Crypto',
+                'url' => 'https://konversi-mata-uang-versi-2.vercel.app/',
                 'description' => 'Aplikasi untuk mengonversi nilai mata uang, menukar pilihan mata uang, dan melihat ringkasan harga aset kripto.',
                 'category' => 'Konsep proyek',
                 'status' => 'Contoh proyek',

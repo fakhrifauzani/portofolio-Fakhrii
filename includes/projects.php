@@ -21,8 +21,13 @@
             $imageSource = $remoteImage !== '' ? $remoteImage : ($localImage !== '' ? $localImage : $fallback);
             $imageFallbackAttribute = $imageSource !== $fallback ? ' data-fallback="' . e($fallback) . '"' : '';
             $isScreenshot = ($project['image_fit'] ?? '') === 'contain';
+            $projectUrl = safe_http_url($project['url'] ?? '');
             ?>
-            <article class="project-card glass-card<?= $isScreenshot ? ' project-card--screenshot' : '' ?>" data-reveal style="--card-index: <?= (int) $index ?>">
+            <?php if ($projectUrl !== ''): ?>
+                <a class="project-card glass-card<?= $isScreenshot ? ' project-card--screenshot' : '' ?>" href="<?= e($projectUrl) ?>" target="_blank" rel="noopener noreferrer" aria-label="Buka demo <?= e($project['title']) ?> di tab baru" data-reveal style="--card-index: <?= (int) $index ?>">
+            <?php else: ?>
+                <article class="project-card glass-card<?= $isScreenshot ? ' project-card--screenshot' : '' ?>" data-reveal style="--card-index: <?= (int) $index ?>">
+            <?php endif; ?>
                 <div class="project-image-wrap">
                     <img class="project-image" src="<?= e($imageSource) ?>" alt="<?= e($project['image_alt']) ?>" width="720" height="460" loading="lazy"<?= $imageFallbackAttribute ?>>
                     <span class="project-image-shade"></span>
@@ -38,7 +43,11 @@
                         <span class="project-status"><i></i><?= e($project['status']) ?></span>
                     </div>
                 </div>
-            </article>
+            <?php if ($projectUrl !== ''): ?>
+                </a>
+            <?php else: ?>
+                </article>
+            <?php endif; ?>
         <?php endforeach; ?>
     </div>
 </section>
