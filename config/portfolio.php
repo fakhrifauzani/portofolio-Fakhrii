@@ -36,6 +36,7 @@ return [
         'items' => [
             [
                 'title' => 'Website Portofolio Pribadi',
+                'url' => 'https://portofoliofakhri-mu.vercel.app/',
                 'description' => 'Latihan menyusun halaman profil satu halaman dengan navigasi, bagian keterampilan, dan kartu proyek.',
                 'category' => 'Latihan',
                 'status' => 'Contoh proyek',
